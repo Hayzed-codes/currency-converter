@@ -23,11 +23,11 @@ function convert() {
       .then((response) => response.json())
       .then((data) => {
         const result = Object.values(data.rates)[0] // This is what the output is to display
-        const converted = parseFloat(result.toFixed(2));
+        const converted = result.toFixed(2)
         exchangeRate.value = converted;
         
         
-        // console.log(data);
+        console.log(data);
         
       });
     }else {
@@ -35,5 +35,5 @@ function convert() {
     }
   }
   
-  
+  // parseFloat(result.toFixed(2))
   // const converted = Math.round(result * 100) /100;

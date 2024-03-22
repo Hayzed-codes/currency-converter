@@ -1,9 +1,6 @@
 @media screen and (max-width: 650px) {
   body {
-    background-image: url(https://shorturl.at/rxz56);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    height: 100vh;
   }
   .wrapper {
     width: 450px;
