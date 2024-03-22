@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
 *{ 
     margin: 0;
     padding: 0;
@@ -10,6 +10,8 @@
 body {
     background-image : url(https://shorturl.at/rxz56 );
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,10 +27,10 @@ body {
 }
 
 h1 {
-    color: rgb(62, 73, 102);
+    color: black;
     text-decoration: underline;
-    font-size: 40px;
-    font-family: "Sevillana", cursive;
+    font-size: 32px;
+    font-family: "Gilda Display", serif;
     text-align: center;
     margin-top: 20px;
 }
@@ -51,6 +53,7 @@ select, input {
     padding: 8px 15px;
     margin-bottom: 15px;
     border: none;
+    border-radius: 7px;
 }
 
 button {
@@ -58,9 +61,17 @@ button {
     font-size: 20px;
     border-radius: 20px;
     padding: 15px 0;
+    color: rgb(0, 183, 255);
     border: none;
-    background: linear-gradient(to bottom, rgb(0, 183, 255), rgba(167, 162, 162, 0.936) );
+    /* background: linear-gradient(to bottom, rgb(0, 183, 255), rgba(167, 162, 162, 0.936) ); */
     cursor: pointer;
+}
+
+
+button:hover {
+    color: white;
+    background: rgb(0, 183, 255);
+    transition: 0.3s ease-in ;
 }
 
 .swapCurrency {
