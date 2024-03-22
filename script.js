@@ -22,12 +22,18 @@ function convert() {
     fetch(`https://${host}/latest?amount=${typeCurrencyValue}&from=${select[0].value}&to=${select[1].value}`)
       .then((response) => response.json())
       .then((data) => {
-        exchangeRate.value = Object.values(data.rates)[0] // This is what the output is to display
-        console.log(data);
-  
+        const result = Object.values(data.rates)[0] // This is what the output is to display
+        const converted = parseFloat(result.toFixed(2));
+        exchangeRate.value = converted;
+        
+        
+        // console.log(data);
+        
       });
-  } else {
-    alert("Please enter two different currencies");
+    }else {
+      alert("Please enter two different currencies");
+    }
   }
-}
-
+  
+  
+  // const converted = Math.round(result * 100) /100;
