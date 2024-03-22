@@ -1,0 +1,31 @@
+@media screen and (max-width: 650px) {
+    .wrapper {
+        width: 450px;
+        background: linear-gradient(to bottom,rgb(241, 101, 62), rgb(0, 183, 255), rgba(167, 162, 162, 0.936) );
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .currencyType {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    select, input {
+        width: 100%;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 10px 20px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
