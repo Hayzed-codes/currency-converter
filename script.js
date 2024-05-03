@@ -47,29 +47,3 @@ typeCurrency.addEventListener("input", function () {
     }
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const validation = input.id === NaN ? alert("Only numbers are allowed") : "";
-// const validation = () => {
-//   input.id === NaN ? alert("Only numbers are allowed") : "";
-
-// }
-
-// input.addEventListener(validation)
